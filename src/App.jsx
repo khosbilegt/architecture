@@ -3,14 +3,23 @@ import { Loading, Home } from './pages';
 import './App.css';
 
 function App() {
-  const [seconds, setSeconds] = useState(0);
   let secondBack = 0;
   
+  const [isDarkMode, setDarkMode] = useState(false);
+  const [isRussian, setRussian] = useState(false);
+
+  const handleDarkMode = (bool) => {
+    setDarkMode(bool);
+  }
+
+  const handleRussian = (bool) => {
+    setRussian(bool);
+  }
+
   useEffect(() => {
     const interval = setInterval(() => {
       if(secondBack < 5) {
         secondBack++;
-        setSeconds(secondBack);
       }
     }, 1000);
 
@@ -20,7 +29,12 @@ function App() {
   return (
     <div className="App">
       <Loading />
-      <Home />
+      <Home 
+        isDarkMode={isDarkMode} 
+        isRussian={isRussian}
+        setDarkMode={handleDarkMode}
+        setRussian={handleRussian}
+      />
     </div>
   );
 }

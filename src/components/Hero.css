@@ -33,3 +33,9 @@
      color: var(--dark-blue);
      background-color: transparent;
 }
+.hero .description {
+     position: absolute;
+     height: 60vh;
+     bottom: 50px;
+     width: 30vw;
+}
