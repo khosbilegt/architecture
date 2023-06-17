@@ -8,6 +8,7 @@ function App() {
   const [isDarkMode, setDarkMode] = useState(true);
   const [isRussian, setRussian] = useState(false);
   const [darkModeClass, setDarkModeClass] = useState("dark");
+  const [page, setPage] = useState("home");
 
   const handleDarkMode = (bool) => {
     if(!bool) {
@@ -21,6 +22,11 @@ function App() {
 
   const handleRussian = (bool) => {
     setRussian(bool);
+  }
+
+  const handlePage = (text) => {
+    setPage(text);
+    console.log(page);
   }
 
   useEffect(() => {
@@ -42,6 +48,7 @@ function App() {
         setDarkMode={handleDarkMode}
         setRussian={handleRussian}
         darkModeClass={darkModeClass}
+        setPage={handlePage}
       />
     </div>
   );

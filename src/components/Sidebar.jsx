@@ -3,6 +3,12 @@ import './Sidebar.css';
 import { navLinks } from '../constants';
 
 function Sidebar(props) {
+
+  const pageAbstract = (e) => {
+    e.preventDefault();
+    props.setPage("test");
+  }
+
   return (
     <div className={`sidebar ${props.darkModeClass}`}>
      <ul>
@@ -12,9 +18,9 @@ function Sidebar(props) {
               text = val.rus;
             }
             if(index == props.index) {
-              return <li key={index}><a href={val.link} data-text={text} id="active">{text}</a></li>
+              return <li key={index}><a onClick={e => pageAbstract(e)} data-text={text} id="active">{text}</a></li>
             }
-            return <li key={index}><a href={val.link} data-text={text}>{text}</a></li>
+            return <li key={index}><a onClick={e => pageAbstract(e)} data-text={text}>{text}</a></li>
           })}
      </ul>
       <div className='sliders'>

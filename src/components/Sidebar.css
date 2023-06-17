@@ -7,10 +7,10 @@
      flex-direction: column;
      list-style: none;
      row-gap: 10px;
-     width: 20vw;
+     width: 10vw;
 }
 .sidebar a {
-     font-size: 40px;
+     font-size: 20px;
      font-family: 'Gost B', sans-serif;
      text-decoration: none;
      text-transform: uppercase;
@@ -37,7 +37,7 @@
 .sidebar .sliders {
      position: absolute;
      bottom: 50px;
-     left: 5vw;
+     left: 25px;
      row-gap: 10px;
      display: flex;
      flex-direction: column;
