@@ -1,18 +1,26 @@
 export const navLinks = [
      {
-          text: "Танилцуулга",
+          mon: "Танилцуулга",
+          rus: "Холбогдох",
           link: "To hell"
      },
      {
-          text: "Туршлага",
+          mon: "Туршлага",
+          rus: "Холбогдох",
           link: "To hell"
      },
      {
-          text: "Төслүүд",
+          mon: "Проектууд",
+          rus: "Холбогдох",
           link: "To hell"
      },
      {
-          text: "Холбогдох",
+          mon: "Холбогдох",
+          rus: "Холбогдох",
           link: "To hell"
      }
+]
+
+export const test = [
+
 ]

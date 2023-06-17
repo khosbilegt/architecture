@@ -1,5 +1,7 @@
 import Sidebar from "./Sidebar";
+import Hero from "./Hero";
 
 export {
-     Sidebar
+     Sidebar,
+     Hero
 }

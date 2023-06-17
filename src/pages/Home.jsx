@@ -1,11 +1,12 @@
 import React from 'react';
-import { Sidebar } from '../components';
+import { Sidebar, Hero } from '../components';
 import './Home.css';
 
 function Home() {
   return (
     <div className='home'>
         <Sidebar />
+        <Hero />
     </div>
   )
 }
