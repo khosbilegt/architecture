@@ -2,9 +2,9 @@ import React from 'react';
 import { Profile } from '../res/images';
 import './Hero.css';
 
-function Hero() {
+function Hero(props) {
   return (
-    <div className='hero'>
+    <div className={`hero ${props.darkModeClass}`}>
       <div className='quote'>
         <p>Reference site about Lorem Ipsum, giving information on its origins,</p>
         <p>as well as a random Lipsum generator.</p>

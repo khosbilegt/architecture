@@ -11,8 +11,9 @@ function Home(props) {
           isRussian={props.isRussian}
           setDarkMode={props.setDarkMode}
           setRussian={props.setRussian}
+          darkModeClass={props.darkModeClass}
         />
-        <Hero />
+        <Hero darkModeClass={props.darkModeClass}/>
     </div>
   )
 }

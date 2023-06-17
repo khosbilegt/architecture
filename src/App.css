@@ -9,9 +9,22 @@
   --beige-focus: #d6c4b0;
   --white: #ededed;
   --white-focus: #ede6df;
-  
 }
 
-body {
-  background-color: #ede6df;
+.light {
+  background-color: var(--white);
+  transition: 200ms;
+}
+.light p, .light a, .light li {
+  color: var(--dark-blue);
+  transition: 200ms;
+}
+
+.dark {
+  background-color: var(--dark-blue);
+  transition: 200ms;
+}
+.dark p, .dark a, .dark li {
+  color: var(--white);
+  transition: 200ms;
 }

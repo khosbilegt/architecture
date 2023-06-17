@@ -2,7 +2,6 @@
      font-family: 'Gost B';
      src: url('../res/fonts/gost.ttf');
 }
-
 .sidebar ul {
      display: flex;
      flex-direction: column;
@@ -13,7 +12,6 @@
 .sidebar a {
      font-size: 40px;
      font-family: 'Gost B', sans-serif;
-     color: var(--dark-blue);
      text-decoration: none;
      text-transform: uppercase;
      animation: active-anim 0.3s ease-in backwards;

@@ -3,6 +3,12 @@
      height: 100vh; 
      width: 70vw;
 }
+.dark {
+     background-color: var(--dark-blue);
+}
+.light {
+     background-color: var(--white);
+}
 .hero .profile {
      position: absolute;
      right: 50px;
@@ -30,7 +36,6 @@
      position: absolute;
      top: 5vh;
      z-index: 3;
-     color: var(--dark-blue);
      background-color: transparent;
 }
 .hero .description {
