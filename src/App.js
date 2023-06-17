@@ -1,23 +1,27 @@
-import logo from './logo.svg';
+import { useEffect, useState } from 'react';
+import { Loading } from './pages';
 import './App.css';
 
 function App() {
+  const [seconds, setSeconds] = useState(0);
+  let secondBack = 0;
+  
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if(secondBack < 2) {
+        secondBack++;
+        setSeconds(secondBack);
+      }
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, []);
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {
+        seconds < 2 ? <Loading /> : <p>Loaded</p>
+      }
     </div>
   );
 }
