@@ -1,5 +1,15 @@
 :root {
-  --text-color: #102937;
+  --dark-blue: #102937;
+  --dark-blue-focus: #091d26;
+  --dark-green: #124d54;
+  --dark-green-focus: #094044;
+  --orange: #f9744d;
+  --orange-focus: #d84f2a;
+  --beige: #e1d9cf;
+  --beige-focus: #d6c4b0;
+  --white: #ededed;
+  --white-focus: #ede6df;
+  
 }
 
 body {

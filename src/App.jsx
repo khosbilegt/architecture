@@ -19,9 +19,7 @@ function App() {
   
   return (
     <div className="App">
-      {/* {
-        seconds < 5 ? <Loading /> : <Home />
-      } */}
+      <Loading />
       <Home />
     </div>
   );

@@ -1,10 +1,18 @@
 export const navLinks = [
      {
-          text: "Text",
+          text: "Танилцуулга",
           link: "To hell"
      },
      {
-          text: "Text2",
+          text: "Туршлага",
+          link: "To hell"
+     },
+     {
+          text: "Төслүүд",
+          link: "To hell"
+     },
+     {
+          text: "Холбогдох",
           link: "To hell"
      }
 ]
