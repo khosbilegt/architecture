@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+
+body {
+     background-color: gray;
+}
+
+.loading {
+     width: 100vw;
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     background-color: black;
+     animation: background-anim 2s ease forwards 3s;
+}
+
+.loading #logo {
+     margin: auto;
+}
+.loading #logo path:nth-child(2) {    
+     stroke-dasharray: 493px;
+     stroke-dashoffset: 493px;
+     animation: line-anim 2s ease forwards;
+}
+.loading #logo path:nth-child(3) {
+     stroke-dasharray: 490px;
+     stroke-dashoffset: 490px;
+     animation: line-anim 2s ease forwards 0.3s;
+}
+.loading #logo path:nth-child(4) {
+     stroke-dasharray: 605px;
+     stroke-dashoffset: 605px;  
+     animation: line-anim 2s ease forwards 0.6s;
+}
+.loading #logo path:nth-child(5) {
+     stroke-dasharray: 535px;
+     stroke-dashoffset: 535px;
+     animation: line-anim 2s ease forwards 0.9s; 
+}
+.loading #logo path:nth-child(6) {
+     stroke-dasharray: 550px;
+     stroke-dashoffset: 550px;
+     animation: line-anim 2s ease forwards 1.2s;
+}
+.loading #logo path:nth-child(7) {
+     stroke-dasharray: 250px;
+     stroke-dashoffset: 250px;
+     animation: line-anim 2s ease forwards 1.5s;
+}
+.loading #logo path:nth-child(8) {
+     stroke-dasharray: 500px;
+     stroke-dashoffset: 500px;
+     animation: line-anim 2s ease forwards 1.5s;
+}
+@keyframes line-anim {
+     to {
+          stroke-dashoffset: 0px;
+     }
+}
+@keyframes background-anim {
+     from {
+          transform: translateX(0);
+          opacity: 100%;
+     }
+     to {
+          transform: translateX(-100vw);
+          opacity: 0;
+     }
+}

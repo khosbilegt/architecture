@@ -8,7 +8,7 @@ function App() {
   
   useEffect(() => {
     const interval = setInterval(() => {
-      if(secondBack < 2) {
+      if(secondBack < 5) {
         secondBack++;
         setSeconds(secondBack);
       }
@@ -19,9 +19,10 @@ function App() {
   
   return (
     <div className="App">
-      {
+      {/* {
         seconds < 2 ? <Loading /> : <p>Loaded</p>
-      }
+      } */}
+      <Loading />
     </div>
   );
 }
