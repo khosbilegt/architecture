@@ -1,0 +1,36 @@
+.sidebar ul {
+     display: flex;
+     flex-direction: column;
+     list-style: none;
+     row-gap: 10px;
+}
+.sidebar a {
+     font-size: 40px;
+     color: transparent;
+     text-decoration: none;
+     -webkit-text-stroke: 1px var(--text-color);
+     text-transform: uppercase;
+}
+.sidebar a:hover::before {
+     content: attr(data-text);
+     position: absolute;
+     text-decoration: underline;
+     color: var(--text-color);
+     width: 0;
+     overflow: hidden;
+     animation: active-anim 2s ease-in;
+}
+.sidebar a:not(:hover)::before {
+     animation: rest-anim 2s ease-in;
+}
+
+@keyframes rest-anim {
+     to {
+          width: 0%;
+     }
+}
+@keyframes active-anim {
+     to {
+          width: 100%;
+     }
+}

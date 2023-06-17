@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Loading } from './pages';
+import { Loading, Home } from './pages';
 import './App.css';
 
 function App() {
@@ -20,9 +20,9 @@ function App() {
   return (
     <div className="App">
       {/* {
-        seconds < 2 ? <Loading /> : <p>Loaded</p>
+        seconds < 5 ? <Loading /> : <Home />
       } */}
-      <Loading />
+      <Home />
     </div>
   );
 }
