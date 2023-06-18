@@ -9,6 +9,8 @@ function App() {
   const [isRussian, setRussian] = useState(false);
   const [darkModeClass, setDarkModeClass] = useState("dark");
   const [page, setPage] = useState("home");
+  const [content, setContent] = useState();
+  const [refresh, setRefresh] = useState(0);
 
   const handleDarkMode = (bool) => {
     if(!bool) {
@@ -25,8 +27,8 @@ function App() {
   }
 
   const handlePage = (text) => {
+    console.log(text);
     setPage(text);
-    console.log(page);
   }
 
   useEffect(() => {
@@ -35,14 +37,100 @@ function App() {
         secondBack++;
       }
     }, 1000);
-
+    
     return () => clearInterval(interval);
   }, []);
+  
+
   
   return (
     <div className={`App ${darkModeClass}`}>
       {/* <Loading /> */}
-      <Contact 
+      {(() => {
+        let tempContent = <Home 
+        isDarkMode={isDarkMode} 
+        isRussian={isRussian}
+        setDarkMode={handleDarkMode}
+        setRussian={handleRussian}
+        darkModeClass={darkModeClass}
+        setPage={handlePage}
+      />;
+      if(page === "skills") {
+        tempContent = <Experience 
+          isDarkMode={isDarkMode} 
+          isRussian={isRussian}
+          setDarkMode={handleDarkMode}
+          setRussian={handleRussian}
+          darkModeClass={darkModeClass}
+          setPage={handlePage}
+        />
+      } else if(page === "projects") {
+        tempContent = <Experience 
+          isDarkMode={isDarkMode} 
+          isRussian={isRussian}
+          setDarkMode={handleDarkMode}
+          setRussian={handleRussian}
+          darkModeClass={darkModeClass}
+          setPage={handlePage}
+        />
+      } else if(page === "contacts") {
+        tempContent = <Contact 
+          isDarkMode={isDarkMode} 
+          isRussian={isRussian}
+          setDarkMode={handleDarkMode}
+          setRussian={handleRussian}
+          darkModeClass={darkModeClass}
+          setPage={handlePage}
+        />
+      }
+      return tempContent;
+      })()}
+    </div>
+  );
+}
+
+export default App;
+
+/*
+{(() => {
+        if(page === "home") {
+          return <Home 
+            isDarkMode={isDarkMode} 
+            isRussian={isRussian}
+            setDarkMode={handleDarkMode}
+            setRussian={handleRussian}
+            darkModeClass={darkModeClass}
+            setPage={handlePage}
+          />
+        } else if(page === "skills") {
+          return <Experience 
+            isDarkMode={isDarkMode} 
+            isRussian={isRussian}
+            setDarkMode={handleDarkMode}
+            setRussian={handleRussian}
+            darkModeClass={darkModeClass}
+            setPage={handlePage}
+          />
+        } else if(page === "projects") {
+          return <Experience 
+            isDarkMode={isDarkMode} 
+            isRussian={isRussian}
+            setDarkMode={handleDarkMode}
+            setRussian={handleRussian}
+            darkModeClass={darkModeClass}
+            setPage={handlePage}
+          />
+        } else if(page === "contacts") {
+            return <Contact 
+            isDarkMode={isDarkMode} 
+            isRussian={isRussian}
+            setDarkMode={handleDarkMode}
+            setRussian={handleRussian}
+            darkModeClass={darkModeClass}
+            setPage={handlePage}
+          />
+        }
+        return <Contact 
         isDarkMode={isDarkMode} 
         isRussian={isRussian}
         setDarkMode={handleDarkMode}
@@ -50,8 +138,5 @@ function App() {
         darkModeClass={darkModeClass}
         setPage={handlePage}
       />
-    </div>
-  );
-}
-
-export default App;
+      })};
+*/

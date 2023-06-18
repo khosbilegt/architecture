@@ -4,10 +4,24 @@ import { Autograph } from '../res/images/';
 import { navLinks } from '../constants';
 
 function Sidebar(props) {
-
-  const pageAbstract = (e) => {
+  const pageAbstract = (e, index) => {
     e.preventDefault();
-    props.setPage("test");
+    let page = "";
+    switch(index) {
+      case 0:
+        page = "home";
+        break;
+      case 1:
+        page = "skills";
+        break;
+      case 2:
+        page = "projects";
+        break;
+      default:
+        page = "contacts";
+        break;
+    }
+    props.setPage(page);
   }
 
   return (
@@ -20,9 +34,9 @@ function Sidebar(props) {
               text = val.rus;
             }
             if(index == props.index) {
-              return <li key={index}><a onClick={e => pageAbstract(e)} data-text={text} id="active">{text}</a></li>
+              return <li key={index}><a onClick={e => pageAbstract(e, index)} data-text={text} id="active">{text}</a></li>
             }
-            return <li key={index}><a onClick={e => pageAbstract(e)} data-text={text}>{text}</a></li>
+            return <li key={index}><a onClick={e => pageAbstract(e, index)} data-text={text}>{text}</a></li>
           })}
      </ul>
       <div className='sliders'>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Sidebar, Hero } from '../components';
+import { skills_row2, skills_row1, skills_text } from '../constants';
 import './Experience.css';
-import { skills_row2, skills_row1 } from '../constants';
 
 function Experience(props) {
   return (
@@ -16,35 +16,41 @@ function Experience(props) {
                setPage={props.setPage}
           />
           <div className='content'>
+               <h1>{props.isRussian ? "Proficient Software" : "Эзэмшсэн Программууд"}</h1>
+               <p>{props.isRussian ? skills_text.en : skills_text.mon}</p>
                <div className='cols'>
-               {skills_row1.map((val, index) => {
-                    return <div className='wrapper'>
-                         <img src={val.img} />
-                         <div className='progress'>
-                              <div className='progress-content'>
-                                   <p>{val.name}</p>
-                                   <p>{val.percentage}</p>
+                    <div className='rows'>
+                         {skills_row1.map((val, index) => {
+                              return <div className='wrapper'>
+                                   <img src={val.img} />
+                                   <div className='progress'>
+                                        <div className='progress-content'>
+                                             <p>{val.name}</p>
+                                             <p>{val.percentage}</p>
+                                        </div>
+                                        <div className='bar'>
+                                             <div className='percentage' style={{width: val.percentage}}></div>
+                                        </div>
+                                   </div>
                               </div>
-                              <div className='bar'>
-                                   <div className='percentage' style={{width: val.percentage}}></div>
-                              </div>
-                         </div>
+                         })}
                     </div>
-               })}
-               {skills_row2.map((val, index) => {
-                    return <div className='wrapper'>
-                         <img src={val.img} />
-                         <div className='progress'>
-                              <div className='progress-content'>
-                                   <p>{val.name}</p>
-                                   <p>{val.percentage}</p>
+                    <div className='rows'>
+                         {skills_row2.map((val, index) => {
+                              return <div className='wrapper'>
+                                   <img src={val.img} />
+                                   <div className='progress'>
+                                        <div className='progress-content'>
+                                             <p>{val.name}</p>
+                                             <p>{val.percentage}</p>
+                                        </div>
+                                        <div className='bar'>
+                                             <div className='percentage' style={{width: val.percentage}}></div>
+                                        </div>
+                                   </div>
                               </div>
-                              <div className='bar'>
-                                   <div className='percentage' style={{width: val.percentage}}></div>
-                              </div>
-                         </div>
+                         })}
                     </div>
-               })}
                </div>
           </div>
     </div>

@@ -4,7 +4,7 @@ import {
      ThreeDs, Vray
 } from './res/images';
 
-import { GrLocation, GrMailOption, GrFacebook } from 'react-icons/gr';
+import { GrFacebook } from 'react-icons/gr';
 import { HiOutlinePhone, HiMail, HiLocationMarker } from 'react-icons/hi';
 import { SiTelegram } from 'react-icons/si';
 
@@ -25,10 +25,10 @@ export const skills_row1 = [
           img: Revit
      },
      {
-          name: "Adobe Photoshop",
-          percentage: "70%",
-          img: Photoshop
-     }
+          name: "Chaos V-Ray",
+          percentage: "40%",
+          img: Vray
+     },
 ]
 
 export const skills_row2 = [
@@ -36,6 +36,11 @@ export const skills_row2 = [
           name: "Procreate",
           percentage: "70%",
           img: Procreate
+     },
+     {
+          name: "Adobe Photoshop",
+          percentage: "70%",
+          img: Photoshop
      },
      {
           name: "Autodesk AutoCAD",
@@ -47,12 +52,12 @@ export const skills_row2 = [
           percentage: "50%",
           img: ThreeDs
      },
-     {
-          name: "Chaos V-Ray",
-          percentage: "40%",
-          img: Vray
-     },
 ]
+
+export const skills_text = {
+     en: "I have diligently pursued a range of programs, attaining varying degrees of proficiency in each. The software I'm most familiar with are the following.",
+     mon: "Би их сургуульд сурах болон хувиараа дадлага хийх хугацаандаа зураг болон рендерлэлтийн дараах программуудыг тодорхой хэмжээнд эзэмшсэн."
+}
 
 export const navLinks = [
      {
@@ -101,6 +106,6 @@ export const social = [
      {
           text: "@SanchirD",
           icon: SiTelegram,
-          link: "https://telegram.org/tour/groups"
+          link: "https://telegram.org/"
      }
 ]
