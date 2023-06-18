@@ -27,18 +27,18 @@ function Sidebar(props) {
      </ul>
       <div className='sliders'>
         <div className='slider-cont'>
-          <p>{props.isRussian ? "Dark Mode" : "Шөнийн Горим"}</p>
           <label className="switch">
             <input type="checkbox" checked={props.isDarkMode} onChange={(e) => {props.setDarkMode(!props.isDarkMode)}}/>
             <span className="slider round"></span>
           </label>
+          <p>{props.isRussian ? "Dark Mode" : "Шөнийн Горим"}</p>
         </div>
         <div className='slider-cont'>
-          <p>{props.isRussian ? "Mongolian" : "Англи"}</p>
           <label className="switch">
             <input type="checkbox" checked={props.isRussian} onChange={(e) => {props.setRussian(e.target.checked)}}/>
             <span className="slider round"></span>
           </label>
+          <p>{props.isRussian ? "Mongolian" : "Англи"}</p>
         </div>
       </div>
     </div>
