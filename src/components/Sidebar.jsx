@@ -31,7 +31,9 @@ function Sidebar(props) {
             <input type="checkbox" checked={props.isDarkMode} onChange={(e) => {props.setDarkMode(!props.isDarkMode)}}/>
             <span className="slider round"></span>
           </label>
-          <p>{props.isRussian ? "Dark Mode" : "Шөнийн Горим"}</p>
+          <p>{props.isRussian ? 
+            props.isDarkMode ? "Day" : "Night"
+          : props.isDarkMode ? "Өдөр" : "Шөнө"}</p>
         </div>
         <div className='slider-cont'>
           <label className="switch">

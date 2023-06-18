@@ -1,0 +1,9 @@
+.contact {
+     display: flex;
+}
+
+.contact .content {
+     width: 100vw;
+     height: 50vw;
+     
+}

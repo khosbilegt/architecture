@@ -1,5 +1,6 @@
 import React from 'react';
 import { Sidebar } from '../components';
+import './Contact.css';
 
 function Contact(props) {
   return (
@@ -13,6 +14,11 @@ function Contact(props) {
                darkModeClass={props.darkModeClass}
                setPage={props.setPage}
           />
+          <div className='content'>
+               <div className='card'>
+                    
+               </div>
+          </div>
     </div>
   )
 }
