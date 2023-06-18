@@ -8,6 +8,8 @@
 .experience .content {
      margin-left: 8vw;
      padding: 25px 50px;
+     margin-left: 20vw;
+     transition: 200ms;
 }
 .experience .progress {
      width: 60%;
@@ -60,4 +62,26 @@
 }
 .experience p {
      text-align: center;
+}
+
+@media (max-width: 768px) {
+     .experience .progress {
+          width: 100%;
+     }
+     .experience .cols {
+          flex-direction: column;
+          width: 80vw;
+     }
+     .experience .rows {
+          margin-left: 10vw;
+          width: 60vw;
+     }
+}
+@media (max-width: 768px) {
+     .experience .content {
+          margin-left: -10vw;
+     }
+     .experience h1 {
+          margin-left: 5vw;
+     }
 }

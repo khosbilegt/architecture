@@ -5,8 +5,8 @@ import './Experience.css';
 
 function Experience(props) {
   return (
-    <div className='experience'>
-          <Sidebar 
+    <div className={`experience ${props.darkModeClass}`}>
+          <Sidebar
                index={1} 
                isDarkMode={props.isDarkMode} 
                isRussian={props.isRussian}

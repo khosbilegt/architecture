@@ -2,11 +2,19 @@
 
 .sidebar {
      transition: 200ms;
+     min-width: 200px;
+     max-width: 250px;
      height: 100vh;
-     width: 15vw;
+     width: 20vw;
+     transition: 200ms;
+     position: fixed;
+     display: flex;
+     flex-direction: column;
+     z-index: 2;
 }
 .sidebar img {
      width: 10vw;
+     min-width: 150px;
      margin-left: 2vw;
 }
 .sidebar ul {
@@ -27,27 +35,18 @@
      color: var(--orange);
      text-decoration: underline;
 }
-.sidebar a:hover::before {
-     content: attr(data-text);
-     position: absolute;
+.sidebar a:hover {
+     position: sticky;
      text-decoration: underline;
-     color: var(--orange);
      width: 0;
      overflow: hidden;
-     animation: active-anim 0.3s ease-in forwards;
-}
-@keyframes active-anim {
-     to {
-          width: 100%;
-     }
 }
 .sidebar .sliders {
-     position: absolute;
-     bottom: 50px;
-     left: 25px;
      row-gap: 10px;
      display: flex;
      flex-direction: column;
+     min-width: 250px;
+     margin-left: 3vw;
 }
 .sidebar .slider-cont {
      display: flex;
@@ -91,17 +90,17 @@
      width: 26px;
      left: 4px;
      bottom: 4px;
-     background-color: white;
+     background-color: #fff;
      -webkit-transition: .4s;
      transition: .4s;
 }
 
 .sidebar input:checked + .slider {
-     background-color: var(--orange);
+     background-color: var(--light-yellow);
 }
 
 .sidebar input:focus + .slider {
-     box-shadow: 0 0 1px var(--dark-blue);
+     box-shadow: 0 0 1px var(--light-yellow);
 }
 
 .sidebar input:checked + .slider:before {
@@ -116,4 +115,35 @@
 
 .sidebar .slider.round:before {
      border-radius: 50%;
+}
+
+.sidebar-wrapper button {
+     border: none;
+     width: 50px;
+     height: 50px;
+     background-color: transparent;
+     transition: 200ms;
+     display: none;
+     border-radius: 15px;
+     margin: 5px;
+     z-index: 2;
+}
+.sidebar-wrapper button:hover {
+     background-color: var(--misty);
+}
+@media (max-width: 768px) {
+     .sidebar {
+          transform: translateX(-35vw);
+          width: 30vw;
+     }
+     .true {
+          transform: translateX(0);
+          width: 30vw;
+     }
+     .sidebar-wrapper button {
+          display: block;
+     }
+     .sidebar-wrapper {
+          z-index: 3;
+     }
 }
