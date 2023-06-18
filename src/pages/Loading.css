@@ -14,8 +14,14 @@
 
 .loading #logo {
      margin: auto;
+     width: 500px;
+     height: 500px;
 }
-.loading #logo path:nth-child(2) {    
+.loading #logo {
+     stroke-dasharray: 1000px;
+     stroke-dashoffset: 1000px;
+}
+/* .loading #logo path:nth-child(2) {    
      stroke-dasharray: 493px;
      stroke-dashoffset: 493px;
      animation: line-anim 2s ease forwards;
@@ -64,4 +70,4 @@
           transform: translateX(-100vw);
           opacity: 0;
      }
-}
+} */

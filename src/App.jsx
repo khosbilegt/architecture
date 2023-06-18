@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Loading, Home } from './pages';
+import { Loading, Home, Experience } from './pages';
 import './App.css';
 
 function App() {
@@ -41,8 +41,8 @@ function App() {
   
   return (
     <div className={`App ${darkModeClass}`}>
-      <Loading />
-      <Home 
+      {/* <Loading /> */}
+      <Experience 
         isDarkMode={isDarkMode} 
         isRussian={isRussian}
         setDarkMode={handleDarkMode}

@@ -1,5 +1,5 @@
 :root {
-  --dark-blue: #102937;
+  /* --dark-blue: #102937;
   --dark-blue-focus: #091d26;
   --dark-green: #124d54;
   --dark-green-focus: #094044;
@@ -8,7 +8,15 @@
   --beige: #e1d9cf;
   --beige-focus: #d6c4b0;
   --white: #ededed;
-  --white-focus: #ede6df;
+  --white-focus: #ede6df; */
+
+  --light-blue: rgb(127, 175, 186);
+  --dark-blue: rgb(78, 148, 153);
+  --light-green: rgb(145, 164, 164);
+  --dark-green: rgb(88, 180, 90);
+  --light-yellow: rgb(179, 181, 166);
+  --naval: #2D3B49;
+  --misty: #CCD1D0;
 }
 
 .light {
@@ -16,7 +24,7 @@
   transition: 200ms;
 }
 .light p, .light a, .light li {
-  color: var(--dark-blue);
+  color: var(--naval);
   transition: 200ms;
 }
 
@@ -25,6 +33,6 @@
   transition: 200ms;
 }
 .dark p, .dark a, .dark li {
-  color: var(--white);
+  color: #000;
   transition: 200ms;
 }

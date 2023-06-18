@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Sidebar.css';
+import { Autograph } from '../res/images/';
 import { navLinks } from '../constants';
 
 function Sidebar(props) {
@@ -11,6 +12,7 @@ function Sidebar(props) {
 
   return (
     <div className={`sidebar ${props.darkModeClass}`}>
+      <img src={Autograph} />
      <ul>
           {navLinks.map((val, index) => {
             let text = val.mon;
@@ -25,14 +27,14 @@ function Sidebar(props) {
      </ul>
       <div className='sliders'>
         <div className='slider-cont'>
-          <p>Dark Mode</p>
+          <p>{props.isRussian ? "Dark Mode" : "Шөнийн Горим"}</p>
           <label className="switch">
             <input type="checkbox" checked={props.isDarkMode} onChange={(e) => {props.setDarkMode(!props.isDarkMode)}}/>
             <span className="slider round"></span>
           </label>
         </div>
         <div className='slider-cont'>
-          <p>Russian</p>
+          <p>{props.isRussian ? "Mongolian" : "Англи"}</p>
           <label className="switch">
             <input type="checkbox" checked={props.isRussian} onChange={(e) => {props.setRussian(e.target.checked)}}/>
             <span className="slider round"></span>
@@ -43,4 +45,4 @@ function Sidebar(props) {
   )
 }
 
-export default Sidebar
+export default Sidebar;
