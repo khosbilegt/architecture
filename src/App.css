@@ -24,7 +24,7 @@
   transition: 200ms;
 }
 .light p, .light a, .light li {
-  color: var(--naval);
+  color: #000;
   transition: 200ms;
 }
 
@@ -33,6 +33,6 @@
   transition: 200ms;
 }
 .dark p, .dark a, .dark li {
-  color: #000;
+  color: #fff;
   transition: 200ms;
 }

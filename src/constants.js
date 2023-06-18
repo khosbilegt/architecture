@@ -4,6 +4,10 @@ import {
      ThreeDs, Vray
 } from './res/images';
 
+import { GrLocation, GrMailOption, GrFacebook } from 'react-icons/gr';
+import { HiOutlinePhone, HiMail, HiLocationMarker } from 'react-icons/hi';
+import { SiTelegram } from 'react-icons/si';
+
 export const skills_row1 = [
      {
           name: "Graphisoft Archicad",
@@ -70,5 +74,33 @@ export const navLinks = [
           mon: "Холбогдох",
           rus: "Contact",
           link: "To hell"
+     }
+]
+
+export const contact = [
+     {
+          text: "Ulaanbaatar, Mongolia",
+          icon: HiLocationMarker
+     },
+     {
+          text: "SANCHIRDUL@GMAIL.COM",
+          icon: HiMail
+     },
+     {
+          text: "+976 80369023",
+          icon: HiOutlinePhone
+     }
+]
+
+export const social = [
+     {
+          text: "Д. Санчир",
+          icon: GrFacebook,
+          link: "https://www.facebook.com/sanchirr.dul?mibextid=ZbWKwL"
+     },
+     {
+          text: "@SanchirD",
+          icon: SiTelegram,
+          link: "https://telegram.org/tour/groups"
      }
 ]
