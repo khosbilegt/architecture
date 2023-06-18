@@ -8,12 +8,9 @@
 .experience .content {
      margin-left: 8vw;
      padding: 25px 50px;
-     display: flex;
-     flex-direction: column;
-     row-gap: 15px;
 }
 .experience .progress {
-     width: 50vw;
+     width: 50%;
      height: 40px;
 }
 .experience .bar {
@@ -39,4 +36,15 @@
 }
 .experience .wrapper {
      display: flex;
+}
+.experience .rows {
+     background-color: blue;
+     width: 50%;
+     flex-direction: row;
+}
+.experience .cols {
+     display: flex;
+     width: 60vw;
+     flex-direction: column;
+     row-gap: 15px;
 }

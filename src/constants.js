@@ -4,7 +4,7 @@ import {
      ThreeDs, Vray
 } from './res/images';
 
-export const skills = [
+export const skills_row1 = [
      {
           name: "Graphisoft Archicad",
           percentage: "80%",
@@ -24,7 +24,10 @@ export const skills = [
           name: "Adobe Photoshop",
           percentage: "70%",
           img: Photoshop
-     },
+     }
+]
+
+export const skills_row2 = [
      {
           name: "Procreate",
           percentage: "70%",
