@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Loading, Home, Experience, Contact } from './pages';
+import { Loading, Home, Experience, Contact, Projects } from './pages';
 import './App.css';
 
 function App() {
@@ -65,7 +65,7 @@ function App() {
           setPage={handlePage}
         />
       } else if(page === "projects") {
-        tempContent = <Experience 
+        tempContent = <Projects
           isDarkMode={isDarkMode} 
           isRussian={isRussian}
           setDarkMode={handleDarkMode}
