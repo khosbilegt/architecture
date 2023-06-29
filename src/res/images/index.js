@@ -8,6 +8,8 @@ import Enscape from './enscape.png';
 import Procreate from './procreate.png';
 import Revit from './revit.png';
 import Vray from './vray.png';
+import Project1_Default from './projects/project1_default.png';
+import Project1_Expanded from './projects/project1_exp.jpg';
 
 export {
      Profile,
@@ -20,4 +22,6 @@ export {
      Revit,
      Vray,
      Autocad,
+     Project1_Default,
+     Project1_Expanded
 }
