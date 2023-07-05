@@ -8,9 +8,8 @@ function App() {
   const [isDarkMode, setDarkMode] = useState(true);
   const [isRussian, setRussian] = useState(false);
   const [darkModeClass, setDarkModeClass] = useState("dark");
+  const [sidebarActive, setSidebarActive] = useState("nav-active");
   const [page, setPage] = useState("home");
-  const [content, setContent] = useState();
-  const [refresh, setRefresh] = useState(0);
 
   const handleDarkMode = (bool) => {
     if(!bool) {
@@ -44,7 +43,7 @@ function App() {
 
   
   return (
-    <div className={`App ${darkModeClass}`}>
+    <div className={`App ${darkModeClass} ${sidebarActive}`}>
       {/* <Loading /> */}
       {(() => {
         let tempContent = <Home 

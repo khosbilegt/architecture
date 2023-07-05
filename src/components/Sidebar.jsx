@@ -29,13 +29,13 @@ function Sidebar(props) {
   }
 
   return (
-    <div className={`sidebar-wrapper ${props.darkModeClass}`}>
+    <div className={`sidebar-wrapper`}>
       <button onClick={(e) => {
         setHidden(!isHidden);
       }}>
         {isHidden ? <MdKeyboardArrowLeft size={"30px"}/> : <MdKeyboardArrowRight size={"30px"}/>}
       </button>
-      <div className={`sidebar ${props.darkModeClass} ${isHidden}`}>
+      <div className={`sidebar ${props.darkModeClass+"-nav"} ${isHidden}`}>
       <div>
         <img src={Autograph} />
         <ul>
