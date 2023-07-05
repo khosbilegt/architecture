@@ -2,12 +2,13 @@
      top: 0;
      z-index: 1;
      display: flex;
-     width: 100vw;
+     width: 80vw;
      min-height: 100vh;
      padding-bottom: 50px;
 }
 .experience .content {
      padding: 25px 50px;
+     margin-left: 25vw;
      transition: 200ms;
 }
 .experience .progress {
@@ -64,6 +65,12 @@
 }
 
 @media (max-width: 768px) {
+     .experience {
+          width: 100vw;
+     }
+     .experience .content {
+          margin-left: 0;
+     }
      .experience .progress {
           width: 100%;
      }
