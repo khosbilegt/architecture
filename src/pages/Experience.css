@@ -1,14 +1,13 @@
 .experience {
-     position: absolute;
      top: 0;
      z-index: 1;
      display: flex;
-     height: 100vh;
+     width: 100vw;
+     min-height: 100vh;
+     padding-bottom: 50px;
 }
 .experience .content {
-     margin-left: 8vw;
      padding: 25px 50px;
-     margin-left: 20vw;
      transition: 200ms;
 }
 .experience .progress {
