@@ -4,3 +4,31 @@
      z-index: 1;
      display: flex;
 }
+.home .content {
+     min-width: 80vw;
+     min-height: 100vh;
+     margin-left: 18vw;
+     display: flex;
+     padding: 50px 25px;
+     flex-wrap: wrap;
+}
+.home .profile {
+     height: 400px;
+}
+.home .quote {
+     width: 40vw;
+     margin-right: 25px;
+}
+@media (max-width: 768px) {
+     .home {
+          width: 100vw;
+     }
+     .home .quote {
+          margin-bottom: 25px;
+          width: 90vw;
+          margin-left: -10vw;
+     }
+     .home .content {
+          margin-left: 0;
+     }
+}

@@ -63,7 +63,7 @@
 
 @media (max-width: 768px) {
      .contact .wrapper {
-          margin-left: 25vw;
+          margin-left: -15vw;
           flex-direction: column;
      }
 }

@@ -51,7 +51,6 @@
 }
 .projects .wrapper {
      display: flex;
-     width: 80vw;
      flex-wrap: wrap;
      flex-basis: 50%;
      column-gap: 25px;
@@ -59,8 +58,7 @@
 }
 @media (max-width: 768px) {
      .projects .content {
-          margin-left: 5vw;
-          width: 100vw;
+          margin-left: -15vw;
      }
      .projects h1 {
           margin-left: -20vw;
