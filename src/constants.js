@@ -2,7 +2,8 @@ import {
      Archicad, Enscape, Revit,
      Photoshop, Procreate, Autocad,
      ThreeDs, Vray,
-     Project1_Default, Project1_Expanded
+     Project1_Default, Project1_Expanded,
+     Project2_Default, Project2_Expanded
 } from './res/images';
 
 import { GrFacebook } from 'react-icons/gr';
@@ -113,25 +114,29 @@ export const social = [
 
 export const projects = [
      {
-          image: Project1_Default,
+          small: Project1_Default,
+          large: Project1_Expanded,
           text: "Lorem ipsum",
           expanded_img: Project1_Expanded,
           expanded_text: "Lorem ipsum dolores"
      },
      {
-          image: Project1_Default,
+          small: Project2_Default,
+          large: Project2_Expanded,
           text: "Lorem ipsum",
           expanded_img: Project1_Expanded,
           expanded_text: "Lorem ipsum dolores"
      },
      {
-          image: Project1_Default,
+          small: Project1_Default,
+          large: Project1_Expanded,
           text: "Lorem ipsum",
           expanded_img: Project1_Expanded,
           expanded_text: "Lorem ipsum dolores"
      },
      {
-          image: Project1_Default,
+          small: Project1_Default,
+          large: Project1_Expanded,
           text: "Lorem ipsum",
           expanded_img: Project1_Expanded,
           expanded_text: "Lorem ipsum dolores"
