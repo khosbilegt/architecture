@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/architecture/static/css/main.7194f81c.css",
+    "main.css": "/architecture/static/css/main.edeacdc0.css",
     "main.js": "/architecture/static/js/main.95fa9154.js",
     "static/media/project1_exp.jpg": "/architecture/static/media/project1_exp.bec0f7c17cea6fa809a6.jpg",
     "static/media/project3_exp.png": "/architecture/static/media/project3_exp.789f50a82707ecc95987.png",
@@ -15,11 +15,11 @@
     "static/media/vray.png": "/architecture/static/media/vray.772c19f6d2824448c97b.png",
     "static/media/autocad.png": "/architecture/static/media/autocad.23f7902503f163cf901e.png",
     "index.html": "/architecture/index.html",
-    "main.7194f81c.css.map": "/architecture/static/css/main.7194f81c.css.map",
+    "main.edeacdc0.css.map": "/architecture/static/css/main.edeacdc0.css.map",
     "main.95fa9154.js.map": "/architecture/static/js/main.95fa9154.js.map"
   },
   "entrypoints": [
-    "static/css/main.7194f81c.css",
+    "static/css/main.edeacdc0.css",
     "static/js/main.95fa9154.js"
   ]
 }
