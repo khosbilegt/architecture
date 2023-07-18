@@ -138,7 +138,7 @@
           width: 34vw;
      }
      .sidebar {
-          transform: translateX(-35vw);
+          transform: translateX(-250px);
           width: 30vw;
      }
      .true {
