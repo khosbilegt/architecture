@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.7194f81c.css",
-    "main.js": "/static/js/main.74b99b28.js",
-    "static/media/project1_exp.jpg": "/static/media/project1_exp.bec0f7c17cea6fa809a6.jpg",
-    "static/media/project3_exp.png": "/static/media/project3_exp.789f50a82707ecc95987.png",
-    "static/media/project2_default.png": "/static/media/project2_default.b68fb8e588887fee3a8c.png",
-    "static/media/project1_default.png": "/static/media/project1_default.f753f2601b1f97d1257a.png",
-    "static/media/profile.jpg": "/static/media/profile.4e4f2f10804fe7005bea.jpg",
-    "static/media/project3_default.png": "/static/media/project3_default.4aa6ceb9a81827d64a8d.png",
-    "static/media/autograph.png": "/static/media/autograph.d7958023ff55980e60da.png",
-    "static/media/autograph.svg": "/static/media/autograph.b6a06902b8818fb966ca4bd8e31215bd.svg",
-    "static/media/photoshop.png": "/static/media/photoshop.fd3f92333af314758175.png",
-    "static/media/dsmax.png": "/static/media/dsmax.2ed6281666b8ab04bded.png",
-    "static/media/vray.png": "/static/media/vray.772c19f6d2824448c97b.png",
-    "static/media/autocad.png": "/static/media/autocad.23f7902503f163cf901e.png",
-    "index.html": "/index.html",
-    "main.7194f81c.css.map": "/static/css/main.7194f81c.css.map",
-    "main.74b99b28.js.map": "/static/js/main.74b99b28.js.map"
+    "main.css": "/architecture/static/css/main.7194f81c.css",
+    "main.js": "/architecture/static/js/main.95fa9154.js",
+    "static/media/project1_exp.jpg": "/architecture/static/media/project1_exp.bec0f7c17cea6fa809a6.jpg",
+    "static/media/project3_exp.png": "/architecture/static/media/project3_exp.789f50a82707ecc95987.png",
+    "static/media/project2_default.png": "/architecture/static/media/project2_default.b68fb8e588887fee3a8c.png",
+    "static/media/project1_default.png": "/architecture/static/media/project1_default.f753f2601b1f97d1257a.png",
+    "static/media/profile.jpg": "/architecture/static/media/profile.4e4f2f10804fe7005bea.jpg",
+    "static/media/project3_default.png": "/architecture/static/media/project3_default.4aa6ceb9a81827d64a8d.png",
+    "static/media/autograph.png": "/architecture/static/media/autograph.d7958023ff55980e60da.png",
+    "static/media/autograph.svg": "/architecture/static/media/autograph.b6a06902b8818fb966ca4bd8e31215bd.svg",
+    "static/media/photoshop.png": "/architecture/static/media/photoshop.fd3f92333af314758175.png",
+    "static/media/dsmax.png": "/architecture/static/media/dsmax.2ed6281666b8ab04bded.png",
+    "static/media/vray.png": "/architecture/static/media/vray.772c19f6d2824448c97b.png",
+    "static/media/autocad.png": "/architecture/static/media/autocad.23f7902503f163cf901e.png",
+    "index.html": "/architecture/index.html",
+    "main.7194f81c.css.map": "/architecture/static/css/main.7194f81c.css.map",
+    "main.95fa9154.js.map": "/architecture/static/js/main.95fa9154.js.map"
   },
   "entrypoints": [
     "static/css/main.7194f81c.css",
-    "static/js/main.74b99b28.js"
+    "static/js/main.95fa9154.js"
   ]
 }
