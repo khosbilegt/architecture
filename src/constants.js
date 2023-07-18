@@ -3,7 +3,8 @@ import {
      Photoshop, Procreate, Autocad,
      ThreeDs, Vray,
      Project1_Default, Project1_Expanded,
-     Project2_Default, Project2_Expanded
+     Project2_Default, Project2_Expanded,
+     Project3_Default, Project3_Expanded
 } from './res/images';
 
 import { GrFacebook } from 'react-icons/gr';
@@ -128,8 +129,8 @@ export const projects = [
           expanded_text: "Lorem ipsum dolores"
      },
      {
-          small: Project1_Default,
-          large: Project1_Expanded,
+          small: Project3_Default,
+          large: Project3_Expanded,
           text: "Lorem ipsum",
           expanded_img: Project1_Expanded,
           expanded_text: "Lorem ipsum dolores"

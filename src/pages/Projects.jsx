@@ -33,13 +33,11 @@ function Projects(props) {
                <div className='wrapper'>
                 {projects.map((val, index) => {
                     return <div className='card'>
-                      <ModalImage
+                      <ModalImage className='img'
                         small={val.small}
                         large={val.large}
                         hideDownload={true}
-                        hideZoom={true}
                       />
-                      {/* <p>{val.text}</p> */}
                     </div>
                 })}
                </div>

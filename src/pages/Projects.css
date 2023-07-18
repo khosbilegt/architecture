@@ -35,14 +35,10 @@
      width: 300px;
      margin-top: 90px;
 }
-.projects .card:hover > p {
-     z-index: 2;
-     color: var(--light-blue);
-}
-.projects .card:hover > .card img {
+.projects .card:hover > .card .img {
      filter: brightness(30%);
 }
-.projects .card img {
+.projects .card .img {
      transition: 200ms;
      z-index: 1;
      object-fit: cover;

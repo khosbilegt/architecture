@@ -11,6 +11,8 @@ import Project1_Default from './projects/project1_default.png';
 import Project1_Expanded from './projects/project1_exp.jpg';
 import Project2_Default from './projects/project2_default.png';
 import Project2_Expanded from './projects/project2_default.png';
+import Project3_Default from './projects/project3_default.png';
+import Project3_Expanded from './projects/project3_exp.png';
 import Profile from "./profile.jpg";
 
 export {
@@ -27,5 +29,7 @@ export {
      Project1_Expanded,
      Project2_Default,
      Project2_Expanded,
+     Project3_Default,
+     Project3_Expanded,
      Profile
 }
