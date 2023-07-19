@@ -38,6 +38,7 @@ function Experience(props) {
                               </div>
                          })}
                     </div>
+                    <div className='space' />
                     <div className='rows'>
                          {skills_row2.map((val, index) => {
                               return <div>
