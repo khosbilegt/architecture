@@ -155,7 +155,7 @@ export const quote = {
      ],
      en: [
           "Welcome to my portfolio!",
-          "You can find the few projects I've worked on during my time in XXX Univesity on this website.",
+          "You can find the few projects I've worked on during my time in Saint Petersburg State University of Architecture and Civil Engineering (SPSUACE) on this website.",
           "While studying, I've learned about the principles of designing, spatial orientation, as well as learned to operate on various drawing and architecture softwares.",
           "I'm currently planning on studying the historical architecture of Mongolia in-depth.",
           "My life's mission is to create comfortable, meaningful designs that exhibit our culture and traditional values.",
