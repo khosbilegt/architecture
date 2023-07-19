@@ -152,6 +152,15 @@ export const quote = {
           "Үндэсний соёл уламжилал, хэв шинжийг агуулсан, тав тухтай, утга төгөлдөр үзэмжит загваруудыг бий болгох нь миний эрхэм зорилго билээ. Та бүхнийг миний портфолиотой танилцаж миний архитектурын салбарт сэтгэл зүрхээ зориулах үйл хэрэгт маань хамтран ажиллахыг урьж байна!",
           "Зочилсонд баярлалаа, санал болгох боломжит хамтын ажиллагаа, боломжуудыг тэсэн ядан хүлээж байя.",
           "Хүндэтгэсэн Д.Санчир"
+     ],
+     en: [
+          "Welcome to my portfolio!",
+          "You can find the few projects I've worked on during my time in XXX Univesity on this website.",
+          "While studying, I've learned about the principles of designing, spatial orientation, as well as learned to operate on various drawing and architecture softwares.",
+          "I'm currently planning on studying the historical architecture of Mongolia in-depth.",
+          "My life's mission is to create comfortable, meaningful designs that exhibit our culture and traditional values.",
+          "Thank you for visiting my portfolio. I'll be expectantly waiting for you to reach out to me regarding cooperation opportunities.",
+          "Sincerely, Sanchir D."
      ]
 }
 

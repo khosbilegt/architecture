@@ -18,9 +18,19 @@ function Home(props) {
         />
         <div className={`content`}>
         <div className={`quote`}>
-            {quote.mon.map((val, index) => {
+          {props.isRussian ? 
+          <>
+            {quote.en.map((val, index) => {
+              return <p>{val}</p>
+            })} 
+          </> 
+          : 
+          <>
+          {quote.mon.map((val, index) => {
               return <p>{val}</p>
             })}
+          </>}
+            
           </div>
           <img className='profile' src={Profile}/>
         </div>
