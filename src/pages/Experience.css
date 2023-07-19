@@ -15,6 +15,9 @@
      width: 60%;
      height: 40px;
 }
+.experience .rows .space {
+     height: 25px;
+}
 .experience .bar {
      background-color: #fff;
      border-radius: 10px;

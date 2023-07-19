@@ -21,35 +21,42 @@ function Experience(props) {
                <div className='cols'>
                     <div className='rows'>
                          {skills_row1.map((val, index) => {
-                              return <div className='wrapper'>
-                                   <img src={val.img} />
-                                   <div className='progress'>
-                                        <div className='progress-content'>
-                                             <p>{val.name}</p>
-                                             <p>{val.percentage}</p>
-                                        </div>
-                                        <div className='bar'>
-                                             <div className='percentage' style={{width: val.percentage}}></div>
+                              return <div>
+                                   <div className='wrapper'>
+                                        <img src={val.img} />
+                                        <div className='progress'>
+                                             <div className='progress-content'>
+                                                  <p>{val.name}</p>
+                                                  <p>{val.percentage}</p>
+                                             </div>
+                                             <div className='bar'>
+                                                  <div className='percentage' style={{width: val.percentage}}></div>
+                                             </div>
                                         </div>
                                    </div>
+                                   <div className='space' />
                               </div>
                          })}
                     </div>
                     <div className='rows'>
                          {skills_row2.map((val, index) => {
-                              return <div className='wrapper'>
-                                   <img src={val.img} />
-                                   <div className='progress'>
-                                        <div className='progress-content'>
-                                             <p>{val.name}</p>
-                                             <p>{val.percentage}</p>
-                                        </div>
-                                        <div className='bar'>
-                                             <div className='percentage' style={{width: val.percentage}}></div>
+                              return <div>
+                                   <div className='wrapper'>
+                                        <img src={val.img} />
+                                        <div className='progress'>
+                                             <div className='progress-content'>
+                                                  <p>{val.name}</p>
+                                                  <p>{val.percentage}</p>
+                                             </div>
+                                             <div className='bar'>
+                                                  <div className='percentage' style={{width: val.percentage}}></div>
+                                             </div>
                                         </div>
                                    </div>
-                              </div>
+                                   <div className='space' />
+                                   </div>
                          })}
+                         <div className='space' />
                     </div>
                </div>
           </div>
