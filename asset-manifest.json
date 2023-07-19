@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/architecture/static/css/main.2799a9cf.css",
-    "main.js": "/architecture/static/js/main.325d1c09.js",
+    "main.js": "/architecture/static/js/main.e34df8e8.js",
     "static/media/project1_exp.jpg": "/architecture/static/media/project1_exp.bec0f7c17cea6fa809a6.jpg",
     "static/media/project3_exp.png": "/architecture/static/media/project3_exp.789f50a82707ecc95987.png",
     "static/media/project2_default.png": "/architecture/static/media/project2_default.b68fb8e588887fee3a8c.png",
@@ -16,10 +16,10 @@
     "static/media/autocad.png": "/architecture/static/media/autocad.23f7902503f163cf901e.png",
     "index.html": "/architecture/index.html",
     "main.2799a9cf.css.map": "/architecture/static/css/main.2799a9cf.css.map",
-    "main.325d1c09.js.map": "/architecture/static/js/main.325d1c09.js.map"
+    "main.e34df8e8.js.map": "/architecture/static/js/main.e34df8e8.js.map"
   },
   "entrypoints": [
     "static/css/main.2799a9cf.css",
-    "static/js/main.325d1c09.js"
+    "static/js/main.e34df8e8.js"
   ]
 }
